@@ -1,0 +1,29 @@
+[versions]
+# 定义了 Kotlin 插件的版本号
+kotlin = "2.2.21"
+# 定义了 Gradle IntelliJ 插件的版本号
+gradleIntelliJPlugin = "1.17.4"
+
+# 定义了 Kotlinx 库的版本号
+kotlinx = "1.10.2"
+# 定义了 IntelliJ Platform 插件的版本号
+intelliJPlatform = "2.7.1"
+
+[libraries]
+
+# 定义了 org.jetbrains.kotlin.kotlin-stdlib 库的依赖信息
+kotlinstdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+# 定义了 org.jetbrains.kotlin.kotlin-compiler-embeddable 库的依赖信息
+kotlincompiler = { group = "org.jetbrains.kotlin", name = "kotlin-compiler-embeddable", version.ref = "kotlin" }
+# 定义了 org.jetbrains.kotlin.kotlin-reflect 库的依赖信息
+kotlinreflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+# 定义了 org.jetbrains.kotlinx.kotlinx-coroutines-core 库的依赖信息
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx" }
+[plugins]
+# 定义了 org.jetbrains.intellij 插件的依赖信息
+gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleIntelliJPlugin" }
+# 定义了 org.jetbrains.kotlin.jvm 插件的依赖信息
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+# 定义了 org.jetbrains.intellij.platform 插件的依赖信息
+intelliJPlatform = { id = "org.jetbrains.intellij.platform", version.ref = "intelliJPlatform" }
+
