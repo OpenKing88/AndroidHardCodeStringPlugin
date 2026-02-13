@@ -1,0 +1,2 @@
+# AndroidHardCodeStringPlugin
+一款用于自动将Android项目中硬编码的字符串替换成符合规范的字符串模板代码，支持view系统和compose系统以及xml中硬编码的替换
